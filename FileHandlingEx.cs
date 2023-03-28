@@ -43,7 +43,7 @@ namespace ConsoleApp2
             //}
 
             //FileInfo fi = new FileInfo(path);
-
+            
 
         }
     }

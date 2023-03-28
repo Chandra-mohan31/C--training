@@ -2,12 +2,54 @@
 {
     internal class Program 
     {
-   
-       
+
+        
         static void Main(string[] args)
         {
+            //lambda functions
 
-            new FileHandlingEx();
+            new AnonyomousFuncEx();
+
+
+            //anonymous functions
+
+            //delegateForSumFunc de = delegate(int a,int b){ return a + b;  };
+            //Console.WriteLine(de(1, 3));
+            //Print p = delegate (string s) { Console.WriteLine(s); };
+            //p("name");
+            //delegateWithoutParams dep = delegate () { Console.WriteLine("without arguments"); };
+            //dep();
+
+            //------------------
+
+            //mathOperations d1 = de.add;
+            //mathOperations d2 = de.sub;
+            //mathOperations d3 = de.mul;
+            //mathOperations d4 = de.div;
+            //mathOperations d5 = d1 + d2 + d3 + d4;
+
+            //Delegate[] arr = d5.GetInvocationList();
+            //d5.Invoke(1, 2);
+
+            //Action<int,int> ae = de.add;
+            //ae.Invoke(1, 2);
+
+            //Func<int, int, int> fe = de.Diff;
+            //fe.Invoke(1, 2);
+            //new FileHandlingEx();
+            //DelegatesEx de = new DelegatesEx();
+
+            //delegateForSumFunc d1 = de.sum;
+            //d1 += de.Diff;
+
+            ////Console.WriteLine(d1.Invoke(1,2));
+            //foreach (Delegate d  in d1.GetInvocationList())
+            //{
+            //    d1(1, 2); 
+            //}
+            //Console.WriteLine(d1.Invoke(1, 2));
+
+            //Console.WriteLine(d1.Invoke(2, 2));
 
             //ChildClass c = new ChildClass();
             //c.display("name");
