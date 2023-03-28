@@ -7,10 +7,12 @@
         static void Main(string[] args)
         {
 
-            ChildClass c = new ChildClass();
-            c.display("name");
-            c.calculate(20);
-            c.show();
+            new FileHandlingEx();
+
+            //ChildClass c = new ChildClass();
+            //c.display("name");
+            //c.calculate(20);
+            //c.show();
             //InheritAbstractClass ihc = new InheritAbstractClass();
             //ihc.method(1,2);
 
