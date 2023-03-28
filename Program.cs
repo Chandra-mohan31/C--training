@@ -3,12 +3,29 @@
     internal class Program 
     {
 
-        
+        //check this 
+
+        //static int Count(Delegate callback, int[] arr)
+        //{
+        //    return arr.Count((Func<int, bool>)callback);
+        //}
+
         static void Main(string[] args)
         {
+
+            //new StatementLambdaEx();
+
+            //int[] arr = {1,2,3,4,5,6,7,8,9};
+            //var count = arr.Count(num => num % 2 == 0);
+            //Console.WriteLine(count);
+
+            //Count(count , arr);
+
+            //new LambdaEx();
+
             //lambda functions
 
-            new AnonyomousFuncEx();
+            //new AnonyomousFuncEx();
 
 
             //anonymous functions
