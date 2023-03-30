@@ -10,9 +10,63 @@
         //    return arr.Count((Func<int, bool>)callback);
         //}
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
 
+            FileHandlingWithAsync.ReadWriteFile();
+
+            
+            
+            //var taskA = AsyncAwaitEx2.MethodA();
+            //int number = await taskA;
+            //Console.WriteLine(number);
+            //AsyncAwaitEx2.MethodC(number);
+            //async await 2 
+            Task task1 = AsyncAwaitEx2.Method1();
+            Task task2 = AsyncAwaitEx2.Method2();
+            Task t = Task.WhenAll(task1, task2);
+            await t;
+            if(t.IsCompleted)
+            {
+                Console.WriteLine("Both completed");
+            }
+            Console.WriteLine(t.IsCompleted);
+            Console.ReadLine();
+            //var task3 = AsyncAwaitEx2.Method3();
+            //Console.WriteLine(task1.Result);
+            //Console.WriteLine(task2.Result);
+
+            //Console.WriteLine(AsyncAwaitEx2.Method1());
+            //Console.WriteLine(AsyncAwaitEx2.Method2());
+            //Console.WriteLine(AsyncAwaitEx2.Method3());
+            //Console.ReadLine();
+            //Task.WaitAll(task1,task2);
+
+            // async await 
+
+            //var calculation = new System.Diagnostics.Stopwatch();
+            //AsyncAwaitEx.Fn1();
+            //AsyncAwaitEx.Fn2();
+            //calculation.Start();
+            //Task<int> task = AsyncAwaitEx.ReturnNum(2);
+            //await task;
+            //Console.WriteLine("other tasks");
+            //Console.WriteLine(task.Result);
+            //Console.WriteLine(AsyncAwaitEx.dummyMethod().Result);
+
+            //Console.ReadLine();
+            //calculation.Stop();
+            //Console.WriteLine("Elapsed Time : "  + calculation.ElapsedMilliseconds);
+
+
+
+
+
+
+            //AsyncAwaitEx.Fn1();
+            //AsyncAwaitEx.Fn2();
+            //Console.ReadLine();
+            //new BuiltInDelegates();
             //new StatementLambdaEx();
 
             //int[] arr = {1,2,3,4,5,6,7,8,9};
